@@ -31,7 +31,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "handlebars": "^2.0.0",
+    "handlebars": "^4.0.11",
     "jsonresume-themeutils": "^1.4.3"
   },
   "deprecated": false,
