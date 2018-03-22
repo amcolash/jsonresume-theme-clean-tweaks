@@ -34,15 +34,17 @@ ul {
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .header.card .left {
-  flex: 350px;
+  flex: 325px;
 }
 
 .header.card .right {
-  flex: auto;
+  /* flex: auto; */
   padding-top: 0.75em;
+  margin-right: auto;
 }
 
 section.card {

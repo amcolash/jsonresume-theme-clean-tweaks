@@ -41,15 +41,17 @@ ul {
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .header.card .left {
-  flex: 350px;
+  flex: 325px;
 }
 
 .header.card .right {
-  flex: auto;
+  /* flex: auto; */
   padding-top: 0.75em;
+  margin-right: auto;
 }
 
 section.card {
@@ -284,10 +286,6 @@ ul.list li:before {
                 Github: <a href='https://github.com/amcolash'>https://github.com/amcolash</a>
               </div>
                 
-              <div class='site'>
-                Linkedin: <a href='https://www.linkedin.com/in/andrew-mcolash'>https://www.linkedin.com/in/andrew-mcolash</a>
-              </div>
-                
             </div>
           </div>
         </div>
@@ -312,7 +310,7 @@ ul.list li:before {
         <section class='card'>
           <div class='section-header'>Projects</div>
           <div class='section-content' id='projects'>
-            <div class='project last'>
+            <div class='project '>
               <div class='project-info'>
                 <div class='title'>
                     <a href="https://github.com/amcolash/WhatsUp">What&#x27;s Up</a>
@@ -328,13 +326,29 @@ ul.list li:before {
                 </div>
               </div>
             </div>
+            <div class='project last'>
+              <div class='project-info'>
+                <div class='title'>
+                    <a href="https://github.com/amcolash/GiffingAwesome">Giffing Awesome</a>
+                </div>
+                  <div class='duration'>
+                     April 2016   - June 2017 
+                  </div>
+                <div class='info'>
+                  <ul class="list">
+                    <li>Mobile web app that allows for users to search image sites, save he share their favorite GIFs</li>
+                    <li>Devloped with the Ionic Framework, Firebase, and the APIs from Giphy, GifMe and Riffsy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
           <section class='card'>
             <div class='section-header'>Technical Skills</div>
             <div class='section-content' id='technical-skills'>
               <div id='skills-container'>
-            <div class='skills'>
+            <div class='skills '>
                 <div class='title'>Sotware Development</div>
               <div class="level">
                 <em>Advanced</em>
@@ -347,7 +361,7 @@ ul.list li:before {
               Bash Scripting, 
             </p>
             </div>
-            <div class='skills'>
+            <div class='skills last'>
                 <div class='title'>Web Development</div>
               <div class="level">
                 <em>Intermediate</em>
@@ -373,7 +387,7 @@ ul.list li:before {
           <section class='card'>
             <div class='section-header'>Employment</div>
             <div class='section-content' id='employment'>
-              <div class='employment'>
+              <div class='employment '>
                 <div class='employment-info'>
                   <div class='title'>
                       <a href='https://perblue.com'>
@@ -395,7 +409,7 @@ ul.list li:before {
               </ul>
                 </div>
               </div>
-              <div class='employment'>
+              <div class='employment '>
                 <div class='employment-info'>
                   <div class='title'>
                       <a href='http://www.med.wisc.edu/show/survey-of-the-health-of-wisconsin/35828'>
@@ -415,7 +429,7 @@ ul.list li:before {
               </ul>
                 </div>
               </div>
-              <div class='employment'>
+              <div class='employment last'>
                 <div class='employment-info'>
                   <div class='title'>
                       <a href='http://lmig.com'>
@@ -442,7 +456,7 @@ ul.list li:before {
           <section class='card'>
             <div class='section-header'>Volunteering</div>
             <div class='section-content' id='voulnteering'>
-                <div class='volunteer'>
+                <div class='volunteer '>
                   <div class='volunteer-info'>
                     <div class='title'>
                       <a href='http://www.litnetwork.org/'>
@@ -462,7 +476,7 @@ ul.list li:before {
                     </ul>
                   </div>
                 </div>
-                <div class='volunteer'>
+                <div class='volunteer last'>
                   <div class='volunteer-info'>
                     <div class='title'>
                       <a href='http://adorable.io/post/kids-get-it'>

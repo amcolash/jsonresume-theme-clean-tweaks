@@ -68,7 +68,7 @@
           <div class='section-header'>Projects</div>
           <div class='section-content' id='projects'>
             {{#each resume.projects}}
-            <div class='project last'>
+            <div class='project {{#if @last}}last{{/if}}'>
               <div class='project-info'>
                 <div class='title'>
                   {{#if url}}
@@ -103,7 +103,7 @@
             <div class='section-content' id='technical-skills'>
               <div id='skills-container'>
           {{#each resume.skills}}
-            <div class='skills'>
+            <div class='skills {{#if @last}}last{{/if}}'>
               {{#if name}}
                 <div class='title'>{{name}}</div>
               {{/if}}
@@ -132,7 +132,7 @@
             <div class='section-header'>Employment</div>
             <div class='section-content' id='employment'>
               {{#each resume.work}}
-              <div class='employment'>
+              <div class='employment {{#if @last}}last{{/if}}'>
                 <div class='employment-info'>
                   <div class='title'>
                     {{#if company}}
@@ -175,7 +175,7 @@
             <div class='section-header'>Volunteering</div>
             <div class='section-content' id='voulnteering'>
               {{#each resume.volunteer}}
-                <div class='volunteer'>
+                <div class='volunteer {{#if @last}}last{{/if}}'>
                   <div class='volunteer-info'>
                     <div class='title'>
                       {{#if organization}}

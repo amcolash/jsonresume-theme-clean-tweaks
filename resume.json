@@ -19,11 +19,6 @@
         "network": "Github",
         "username": "amcolash",
         "url": "https://github.com/amcolash"
-      },
-      {
-        "network": "Linkedin",
-        "username": "andrewmcolash",
-        "url": "https://www.linkedin.com/in/andrew-mcolash"
       }
     ]
   },
@@ -116,6 +111,16 @@
       "highlights": [
         "Leverage multiple event apis to aggregate information about upcoming nearby events",
         "Utilized web technologies including Ionic (Angluar), Firebase, and the APIs from Facebook, Eventbrite, and Meetup"
+      ]
+    },
+    {
+      "title": "Giffing Awesome",
+      "startDate": "2016-4-01",
+      "endDate": "2017-6-01",
+      "url": "https://github.com/amcolash/GiffingAwesome",
+      "highlights": [
+        "Mobile web app that allows for users to search image sites, save he share their favorite GIFs",
+        "Devloped with the Ionic Framework, Firebase, and the APIs from Giphy, GifMe and Riffsy"
       ]
     }
   ],
