@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Andrew McOlash</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto:300,400,700|Noto+Serif:400" rel="stylesheet" type="text/css">
+	<style>
+	body {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  background-color: #f6f6f6;
+}
+
+p {
+  display: inline;
+}
+
+a,span {
+  color: #4c92c1;
+}
+
+.email,.site,.github,.phone-number {
+  margin-bottom: .4em;
+  font-size: .9em;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card {
+  background-color: #fefefe;
+  box-shadow: 1px 1px 14px -5px rgba(0,0,0,0.5);
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.header.card {
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header.card .left {
+  flex: 350px;
+}
+
+.header.card .right {
+  flex: auto;
+  padding-top: 0.75em;
+}
+
+section.card {
+  padding: 15px 15px 22.5px 20px;
+}
+
+.skill {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  margin-bottom: .4em;
+  color: #4c92c1;
+  font-weight: 400;
+}
+
+.skills p {
+  font-size: .9em;
+}
+
+#name {
+  font-family: 'Open Sans',Arial,sans-serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+}
+
+#resume-container {
+  max-width: 950px;
+  margin: auto;
+}
+
+.section-header {
+  margin-top: 0;
+  margin-bottom: .4em;
+  padding-bottom: .2em;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.left-content {
+  flex: 250px;
+}
+
+.left-content .section-header {
+  font-weight: 400;
+}
+
+.left-content .section-content {
+  font-weight: 300;
+}
+
+.left-content .title {
+  font-weight: 400;
+}
+
+.right-content {
+  flex: 500px;
+}
+
+.right-content, .left-content, .header.card {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.right-content .section-header {
+  color: #000;
+}
+
+.title {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .2em;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.duration {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  color: #777;
+  margin-top: .2em;
+  margin-bottom: .3em;
+}
+
+.occupation {
+  font-size: 1em;
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+
+.list {
+  list-style-type: none;
+  font-size: .9em;
+}
+
+.location {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .1em;
+}
+
+ul.list {
+  list-style-type: circle;
+  padding-left: 1rem;
+}
+
+ul.list li {
+  line-height: 135%;
+  margin-bottom: .2em;
+}
+
+ul.list li:before {
+  display: inline-block;
+  width: 0;
+  margin-left: 0;
+}
+
+.project,.employment,.education,.skills,.volunteer {
+  margin-bottom: .9em;
+}
+
+.last {
+  margin-bottom: 0!important;
+}
+
+.term {
+  font-size: 1.65em;
+  font-weight: 200;
+  color: #000;
+  line-height: 1.5em;
+}
+
+#skills-container,.contact {
+  margin-bottom: 0;
+}
+
+.interests,.subtitle {
+  font-size: .9em;
+  margin-bottom: .2em;
+}
+
+.title {
+  color: #555;
+  font-weight: 400;
+}
+
+.level {
+  line-height: 1.5em;
+}
+
+@media print {
+  @page {
+    margin: 0.5cm;
+  }
+
+  body {
+    background-color: initial;
+  }
+
+  .header.card {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .header.card .left, .header.card .right {
+    flex: 1;
+  }
+
+  .card {
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+
+  .section-header {
+    border-bottom: solid 1px #ccc;
+  }
+
+  section.card {
+    padding: 5px 15px;
+  }
+
+  .left-content {
+    flex: 225px;
+  }
+
+  .right-content {
+    flex: 400px;
+  }
+
+  .title a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+	</style>
+  </head>
+  <body>
+    <div id='resume-container'>
+      <div class='header card'>
+        <div class="left">
+          <h1 id='name'>
+            Andrew McOlash
+          </h1>
+          <span class='term'>Software Engineer</span>
+        </div>
+        <div class="right">
+          <div class='section-content' id='contact'>
+            <div class='contact'>
+              <div class='email'>
+                Email: <a href='mailto:amcolash@gmail.com'>amcolash@gmail.com</a>
+              </div>
+              <div class='phone-number'>
+                Phone: <a href="tel:(414) 745-2657">(414) 745-2657</a>
+              </div>
+                <div class='site'>
+                  Website: <a href="http://amcolash.com">http://amcolash.com</a>
+                </div>
+                
+              <div class='site'>
+                Github: <a href='https://github.com/amcolash'>https://github.com/amcolash</a>
+              </div>
+                
+              <div class='site'>
+                Linkedin: <a href='https://www.linkedin.com/in/andrew-mcolash'>https://www.linkedin.com/in/andrew-mcolash</a>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="columns">
+      <div class='left-content'>
+        <section class='card'>
+          <div class='section-header'>Education</div>
+          <div class='section-content' id='education'>
+            <div class='education last'>
+              <div class='education-info'>
+                <div class='title'>
+                  B.S. of Computer Science
+                  <br>at  UW Madison </div>
+                <div class='duration'>
+                   September 2011   - May 2015 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class='card'>
+          <div class='section-header'>Projects</div>
+          <div class='section-content' id='projects'>
+            <div class='project last'>
+              <div class='project-info'>
+                <div class='title'>
+                    <a href="https://github.com/amcolash/WhatsUp">What&#x27;s Up</a>
+                </div>
+                  <div class='duration'>
+                     November 2017   - January 2018 
+                  </div>
+                <div class='info'>
+                  <ul class="list">
+                    <li>Leverage multiple event apis to aggregate information about upcoming nearby events</li>
+                    <li>Utilized web technologies including Ionic (Angluar), Firebase, and the APIs from Facebook, Eventbrite, and Meetup</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          <section class='card'>
+            <div class='section-header'>Technical Skills</div>
+            <div class='section-content' id='technical-skills'>
+              <div id='skills-container'>
+            <div class='skills'>
+                <div class='title'>Sotware Development</div>
+              <div class="level">
+                <em>Advanced</em>
+              </div>
+            <p>
+              Java, 
+              Python, 
+              C, 
+              C++, 
+              Bash Scripting, 
+            </p>
+            </div>
+            <div class='skills'>
+                <div class='title'>Web Development</div>
+              <div class="level">
+                <em>Intermediate</em>
+              </div>
+            <p>
+              HTML, 
+              CSS, 
+              SASS/LESS, 
+              Javascript, 
+              AngularJS, 
+              Ionic Framework, 
+              Twitter Bootstrap, 
+              Jekyll, 
+              NodeJS, 
+              EmberJS, 
+            </p>
+            </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class='right-content'>
+          <section class='card'>
+            <div class='section-header'>Employment</div>
+            <div class='section-content' id='employment'>
+              <div class='employment'>
+                <div class='employment-info'>
+                  <div class='title'>
+                      <a href='https://perblue.com'>
+                        PerBlue
+                      </a>
+                    Software Engineer II
+                  </div>
+                  <div class='duration'>
+                  June 2015
+                  - Present
+                  </div>
+                </div>
+                <div class='info'>
+              <ul class="list">
+                <li>Collaborate with a small team to develop code for the mobile games &quot;Disney Heroes: Battle Mode&quot;, &quot;Portal Quest&quot; and &quot;DragonSoul&quot;</li>
+                <li>Implement new content, combat logic, mechanics for heroes, asset management systems and an improved rendering pipline</li>
+                <li>Create tooling for both the art and quality assurance teams to improve their workflows</li>
+                <li>Refactor large sections of the codebase to make development of new characters easier and faster</li>
+              </ul>
+                </div>
+              </div>
+              <div class='employment'>
+                <div class='employment-info'>
+                  <div class='title'>
+                      <a href='http://www.med.wisc.edu/show/survey-of-the-health-of-wisconsin/35828'>
+                        Survey of the Heath of Wisconsin (SHOW)
+                      </a>
+                    Web Developer
+                  </div>
+                  <div class='duration'>
+                  November 2014
+                  - May 2015
+                  </div>
+                </div>
+                <div class='info'>
+              <ul class="list">
+                <li>Used web technologies including Handlebars, Yeoman, Grunt and Bower</li>
+                <li>Quick iterations of the website for both layout and functionality</li>
+              </ul>
+                </div>
+              </div>
+              <div class='employment'>
+                <div class='employment-info'>
+                  <div class='title'>
+                      <a href='http://lmig.com'>
+                        Liberty Mutual
+                      </a>
+                    Web Development Internship
+                  </div>
+                  <div class='duration'>
+                  May 2014
+                  - August 2014
+                  </div>
+                </div>
+                <div class='info'>
+              <ul class="list">
+                <li>Developed mobile responsive internal web applications</li>
+                <li>Used web technologies including EmberJS, NodeJS, Twitter Bootstrap and Grunt</li>
+                <li>Closely worked with MVC patterns and architeched internal APIs</li>
+              </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class='card'>
+            <div class='section-header'>Volunteering</div>
+            <div class='section-content' id='voulnteering'>
+                <div class='volunteer'>
+                  <div class='volunteer-info'>
+                    <div class='title'>
+                      <a href='http://www.litnetwork.org/'>
+                        Literacy Network
+                      </a>
+                        Math Tutoring 
+                    </div>
+                    <div class='duration'>
+                       August 2017   - Present 
+                    </div>
+                  </div>
+                  <div class='info'>
+                    <ul class="list">
+                      <li>Tutor GED students and help to teach algebra, geometry and statistics</li>
+                      <li>Personalize individual learning plans for each student</li>
+                      <li>Utilize different teaching techniques based on student needs</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class='volunteer'>
+                  <div class='volunteer-info'>
+                    <div class='title'>
+                      <a href='http://adorable.io/post/kids-get-it'>
+                        Kids Get IT
+                      </a>
+                        Teaching Assistant 
+                    </div>
+                    <div class='duration'>
+                       May 2016   - November 2016 
+                    </div>
+                  </div>
+                  <div class='info'>
+                    <ul class="list">
+                      <li>Instruct and teach children about technology</li>
+                      <li>Assist children in making music with SonicPi - an open souce live coding music synthesizer</li>
+                      <li>Help kids learn and write real code with the service Bitsbox</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+          </section>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

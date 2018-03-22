@@ -1,0 +1,250 @@
+body {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  background-color: #f6f6f6;
+}
+
+p {
+  display: inline;
+}
+
+a,span {
+  color: #4c92c1;
+}
+
+.email,.site,.github,.phone-number {
+  margin-bottom: .4em;
+  font-size: .9em;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card {
+  background-color: #fefefe;
+  box-shadow: 1px 1px 14px -5px rgba(0,0,0,0.5);
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.header.card {
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header.card .left {
+  flex: 350px;
+}
+
+.header.card .right {
+  flex: auto;
+  padding-top: 0.75em;
+}
+
+section.card {
+  padding: 15px 15px 22.5px 20px;
+}
+
+.skill {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  margin-bottom: .4em;
+  color: #4c92c1;
+  font-weight: 400;
+}
+
+.skills p {
+  font-size: .9em;
+}
+
+#name {
+  font-family: 'Open Sans',Arial,sans-serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+}
+
+#resume-container {
+  max-width: 950px;
+  margin: auto;
+}
+
+.section-header {
+  margin-top: 0;
+  margin-bottom: .4em;
+  padding-bottom: .2em;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.left-content {
+  flex: 250px;
+}
+
+.left-content .section-header {
+  font-weight: 400;
+}
+
+.left-content .section-content {
+  font-weight: 300;
+}
+
+.left-content .title {
+  font-weight: 400;
+}
+
+.right-content {
+  flex: 500px;
+}
+
+.right-content, .left-content, .header.card {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.right-content .section-header {
+  color: #000;
+}
+
+.title {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .2em;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.duration {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  color: #777;
+  margin-top: .2em;
+  margin-bottom: .3em;
+}
+
+.occupation {
+  font-size: 1em;
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+
+.list {
+  list-style-type: none;
+  font-size: .9em;
+}
+
+.location {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .1em;
+}
+
+ul.list {
+  list-style-type: circle;
+  padding-left: 1rem;
+}
+
+ul.list li {
+  line-height: 135%;
+  margin-bottom: .2em;
+}
+
+ul.list li:before {
+  display: inline-block;
+  width: 0;
+  margin-left: 0;
+}
+
+.project,.employment,.education,.skills,.volunteer {
+  margin-bottom: .9em;
+}
+
+.last {
+  margin-bottom: 0!important;
+}
+
+.term {
+  font-size: 1.65em;
+  font-weight: 200;
+  color: #000;
+  line-height: 1.5em;
+}
+
+#skills-container,.contact {
+  margin-bottom: 0;
+}
+
+.interests,.subtitle {
+  font-size: .9em;
+  margin-bottom: .2em;
+}
+
+.title {
+  color: #555;
+  font-weight: 400;
+}
+
+.level {
+  line-height: 1.5em;
+}
+
+@media print {
+  @page {
+    margin: 0.5cm;
+  }
+
+  body {
+    background-color: initial;
+  }
+
+  .header.card {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .header.card .left, .header.card .right {
+    flex: 1;
+  }
+
+  .card {
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+
+  .section-header {
+    border-bottom: solid 1px #ccc;
+  }
+
+  section.card {
+    padding: 5px 15px;
+  }
+
+  .left-content {
+    flex: 225px;
+  }
+
+  .right-content {
+    flex: 400px;
+  }
+
+  .title a {
+    text-decoration: none;
+    color: #000;
+  }
+}
