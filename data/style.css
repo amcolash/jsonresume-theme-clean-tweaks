@@ -1,25 +1,72 @@
+/* Main components */
+
 body {
   font-family: Roboto,Arial,sans-serif;
   font-weight: 300;
   background-color: #f6f6f6;
+  margin: 1.5em; /* Make sure to modify the top icon position too */
 }
 
 p {
   display: inline;
 }
 
-a,span {
+a {
   color: #4c92c1;
-}
-
-.email,.site,.github,.phone-number {
-  margin-bottom: .4em;
-  font-size: .9em;
 }
 
 ul {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* Top icons */
+
+.top-icons {
+  position: fixed;
+  top: 1.5em;
+  text-align: center;
+  line-height: 1;
+}
+
+.top-icons a, .top-icons a:hover {
+  text-decoration: none;
+}
+
+.top-icons.left {
+  left: 1.5em;
+}
+
+.top-icons.right {
+  right: 1.5em;
+}
+
+.top-icons .icon {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.top-icons .label {
+  padding-top: 3px;
+  color: #777;
+  font-size: 14px;
+}
+
+.top-icons .label.pad-extra {
+  padding-top: 6px;
+}
+
+.top-icons .border {
+  border-bottom: 2px solid #555;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+}
+
+/* Rest of styling */
+
+.email,.site,.github,.phone-number {
+  margin-bottom: .4em;
+  font-size: .9em;
 }
 
 .card {
@@ -206,21 +253,36 @@ ul.list li:before {
   line-height: 1.5em;
 }
 
+@media (max-width: 1090px) {
+  .top-icons {
+    display: none;
+  }
+
+  body {
+    margin: 0.5em;
+  }
+}
+
 @media print {
   @page {
     margin: 0.5cm;
   }
 
+  .top-icons {
+    display: none;
+  }
+
   body {
     background-color: initial;
+    margin: 0;
   }
 
   .header.card {
-    margin-top: 0;
+    margin-top: -3px;
     padding-top: 0;
   }
 
-  .header.card .left, .header.card .right {
+  .header.card .left {
     flex: 1;
   }
 

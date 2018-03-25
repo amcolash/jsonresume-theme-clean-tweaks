@@ -6,7 +6,7 @@
     "email": "amcolash@gmail.com",
     "phone": "(414) 745-2657",
     "website": "http://amcolash.com",
-    "summary": "He is a Software Engineer at PerBlue. When not staring deeply into a text editor (usually vim, VS Code or Eclipse) and trying to solve all of the problems, he likes to bike and relax with video games. Making, developing, and hacking are his passions.",
+    "summary": "Curious, creative and passionate software engineer. Seeking to leverage skills by solving problems with code.",
     "location": {
       "address": "22 E Dayton St Apt 201",
       "postalCode": "WI 53703",
@@ -29,12 +29,12 @@
       "website": "https://perblue.com",
       "startDate": "2015-06-01",
       "endDate": "",
-      "summary": "Worked on developing and implementing new content into the mobile role playing games Disney Heroes: Battle Mode, Portal Quest, and DragonSoul at PerBlue. Worked on implementing unique combat logic, content (new heroes, environments and game modes) and developing tooling for both the art team and quality assurance team.",
+      "summary": "",
       "highlights": [
-        "Collaborate with a small team to develop code for the mobile games \"Disney Heroes: Battle Mode\", \"Portal Quest\" and \"DragonSoul\"",
-        "Implement new content, combat logic, mechanics for heroes, asset management systems and an improved rendering pipline",
+        "Collaborate with a small team to develop software infrastructure for the mobile games \"Disney Heroes: Battle Mode\", \"Portal Quest\" and \"DragonSoul\"",
+        "Implement new content, combat logic, mechanics, asset management system and rendering pipline",
         "Create tooling for both the art and quality assurance teams to improve their workflows",
-        "Refactor large sections of the codebase to make development of new characters easier and faster"
+        "Refactor large sections of the codebase to make development of new characters and mechanics easier and faster"
       ]
     },
     {
@@ -45,8 +45,9 @@
       "endDate": "2015-05-01",
       "summary": "Drafting and development for a new website/webapp that displays health statistics and public health information. This portal provides a simple way to quickly see public health information collected from SHOW.",
       "highlights": [
-        "Used web technologies including Handlebars, Yeoman, Grunt and Bower",
-        "Quick iterations of the website for both layout and functionality"
+        "Developed a public health statistics web portal from scratch",
+        "Used web frameworks including Handlebars and HighCharts to deliver fast, reusable and mobile responsive pages",
+        "Provided quick iterations of the website to tailor specifically to feature requests"
       ]
     },
     {
@@ -58,7 +59,7 @@
       "summary": "Development of mobile responsive internal web applications. Worked on creating a simplified process for engaging the Mobile team using external APIs.",
       "highlights": [
         "Developed mobile responsive internal web applications",
-        "Used web technologies including EmberJS, NodeJS, Twitter Bootstrap and Grunt",
+        "Utilized web technologies including EmberJS, Angular, NodeJS and Grunt",
         "Closely worked with MVC patterns and architeched internal APIs"
       ]
     }
@@ -72,7 +73,7 @@
       "endDate": "",
       "summary": "",
       "highlights": [
-        "Tutor GED students and help to teach algebra, geometry and statistics",
+        "Provide 1 on 1 tutoring sessions for GED students in the subjects of algebra, geometry and statistics",
         "Personalize individual learning plans for each student",
         "Utilize different teaching techniques based on student needs"
       ]
@@ -80,12 +81,12 @@
     {
       "organization": "Kids Get IT",
       "position": "Teaching Assistant",
-      "website": "http://adorable.io/post/kids-get-it",
+      "website": "",
       "startDate": "2016-05-01",
       "endDate": "2016-11-01",
       "summary": "",
       "highlights": [
-        "Instruct and teach children about technology",
+        "Instruct and mentor children to teach them about technology",
         "Assist children in making music with SonicPi - an open souce live coding music synthesizer",
         "Help kids learn and write real code with the service Bitsbox"
       ]
@@ -95,32 +96,36 @@
     {
       "institution": "UW Madison",
       "area": "Computer Science",
-      "studyType": "B.S.",
+      "studyType": "Bachelor of Science",
       "startDate": "2011-09-01",
       "endDate": "2015-05-01",
       "gpa": "3.1",
-      "courses": []
+      "courses": [],
+      "highlights": [
+        "Favorite Class: Computer Graphics",
+        "Computer Engineering Project: Built an Android Spotify app for gatherings with a Reddit-like voting system for choosing upcoming songs"
+      ]
     }
   ],
   "projects": [
     {
       "title": "What's Up",
       "startDate": "2017-11-01",
-      "endDate": "2018-1-01",
+      "endDate": "2018-01-01",
       "url": "https://github.com/amcolash/WhatsUp",
       "highlights": [
-        "Leverage multiple event apis to aggregate information about upcoming nearby events",
-        "Utilized web technologies including Ionic (Angluar), Firebase, and the APIs from Facebook, Eventbrite, and Meetup"
+        "Leverage multiple event apis including Facebook, EventBrite and Meetup to aggregate information about upcoming local events",
+        "Implemented using Ionic (Angluar) and Firebase to provide real time updates to new events"
       ]
     },
     {
       "title": "Giffing Awesome",
-      "startDate": "2016-4-01",
-      "endDate": "2017-6-01",
+      "startDate": "2016-04-01",
+      "endDate": "2017-06-01",
       "url": "https://github.com/amcolash/GiffingAwesome",
       "highlights": [
         "Mobile web app that allows for users to search image sites, save he share their favorite GIFs",
-        "Devloped with the Ionic Framework, Firebase, and the APIs from Giphy, GifMe and Riffsy"
+        "Devloped with the Ionic Framework and Firebase, and the APIs from Giphy, GifMe and Riffsy"
       ]
     }
   ],
@@ -129,7 +134,7 @@
   "skills": [
     {
       "name": "Sotware Development",
-      "level": "Advanced",
+      "level": "",
       "keywords": [
         "Java",
         "Python",
@@ -140,7 +145,7 @@
     },
     {
       "name": "Web Development",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "HTML",
         "CSS",

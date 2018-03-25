@@ -5,10 +5,44 @@
     <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto:300,400,700|Noto+Serif:400" rel="stylesheet" type="text/css">
 	<style>
-	{{{css}}}
+	  {{{css}}}
+    {{{icons}}}
 	</style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src='https://www.googletagmanager.com/gtag/js?id=UA-114681426-1'></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-114681426-1');
+  </script>
+
   </head>
   <body>
+    <div class="top-icons left">
+      <a href="../" title="Home">
+        <i class="icon icon-home" aria-hidden="true"></i>
+      </a>
+      <div class="label">Home</div>
+    </div>
+
+    <div class="top-icons right">
+      <div class="border">
+        <a href="#" class="hover" onclick="window.print();">
+          <i class="icon icon-printer" aria-hidden="true"></i>
+        </a>
+        <div class="label">Print</div>
+      </div>
+
+      <div>
+        <a href="Andrew McOlash.pdf" target="_blank" title="Download Resume" download>
+          <i class="icon icon-floppy-disk" aria-hidden="true"></i>
+        </a>
+        <div class="label pad-extra">PDF</div>
+      </div>
+    </div>
+
     <div id='resume-container'>
     {{#resume.basics}}
       <div class='header card'>
@@ -52,10 +86,19 @@
             <div class='education last'>
               <div class='education-info'>
                 <div class='title'>
-                  {{#if studyType}}{{studyType}}{{/if}} of {{#if area}}{{area}}{{/if}}
+                  {{#if studyType}}{{studyType}}{{/if}} in {{#if area}}{{area}}{{/if}}
                   <br>at {{#if institution}} {{institution}} {{/if}}</div>
                 <div class='duration'>
                   {{#if startDate}} {{date startDate}} {{/if}} {{#if endDate}} - {{date endDate}} {{else}} - Present {{/if}}
+                </div>
+                <div class='info'>
+                  {{#if highlights.length}}
+                  <ul class="list">
+                    {{#each highlights}}
+                    <li>{{.}}</li>
+                    {{/each}}
+                  </ul>
+                  {{/if}}
                 </div>
               </div>
             </div>
@@ -115,7 +158,7 @@
             {{#if keywords.length}}
             <p>
               {{#each keywords}}
-              {{.}}, 
+              {{.}}{{#unless @last}},{{/unless}}
               {{/each}}
             </p>
             {{/if}}
@@ -141,7 +184,7 @@
                       </a>
                     {{/if}}
                     {{#if position}}
-                    {{position}}
+                      <span>{{position}}</span>
                     {{/if}}
                   </div>
                   <div class='duration'>
@@ -171,7 +214,7 @@
           {{/if}}
 
         {{#if resume.volunteer.length}}          
-          <section class='card'>
+          <section class='card {{#unless resume.references.length}}last{{/unless}}'>
             <div class='section-header'>Volunteering</div>
             <div class='section-content' id='voulnteering'>
               {{#each resume.volunteer}}
@@ -179,10 +222,17 @@
                   <div class='volunteer-info'>
                     <div class='title'>
                       {{#if organization}}
-                      <a href='{{#if website}}{{website}}{{/if}}'>
-                        {{organization}}
-                      </a>
-                      {{/if}} {{#if position}} {{position}} {{/if}}
+                        {{#if website}}
+                          <a href='{{website}}'>
+                            {{organization}}
+                          </a>
+                        {{else}}
+                          {{organization}}
+                        {{/if}}
+                      {{/if}}
+                      {{#if position}}
+                        <span>{{position}}</span>
+                      {{/if}}
                     </div>
                     <div class='duration'>
                       {{#if startDate}} {{date startDate}} {{/if}} {{#if endDate}} - {{date endDate}} {{else}} - Present {{/if}}
@@ -207,7 +257,7 @@
         {{/if}}
           
         {{#if resume.references.length}}
-          <section class='card' style="margin-bottom: 48px;">
+          <section class='card last' style="margin-bottom: 48px;">
             <div class='section-header'>References</div>
             <div class='section-content' id='interests'>
         {{#each resume.references}}            	
