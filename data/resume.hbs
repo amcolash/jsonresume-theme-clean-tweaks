@@ -29,7 +29,7 @@
 
     <div class="top-icons right">
       <div class="border">
-        <a href="#" class="hover" onclick="window.print();">
+        <a href="#" class="hover" onclick="window.print();" title="Print Resume">
           <i class="icon icon-printer" aria-hidden="true"></i>
         </a>
         <div class="label">Print</div>
@@ -256,11 +256,11 @@
           </section>
         {{/if}}
           
-        {{#if resume.references.length}}
+        {{!-- {{#if resume.references.length}}
           <section class='card last' style="margin-bottom: 48px;">
             <div class='section-header'>References</div>
             <div class='section-content' id='interests'>
-        {{#each resume.references}}            	
+            {{#each resume.references}}            	
               {{#if reference}}
               <blockquote class="reference">
                 {{reference}}
@@ -274,7 +274,7 @@
             {{/each}}
             </div>
           </section>
-          {{/if}}
+          {{/if}} --}}
         </div>
       </div>
     </div>
