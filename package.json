@@ -31,10 +31,10 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "chrome-headless-render-pdf": "^1.5.1",
+    "chrome-headless-render-pdf": "^1.8.2",
     "fs-extra": "^5.0.0",
-    "handlebars": "^4.0.11",
-    "moment": "^2.21.0"
+    "handlebars": "^4.1.2",
+    "moment": "^2.24.0"
   },
   "deprecated": false,
   "description": "clean theme for JSON Resume",
