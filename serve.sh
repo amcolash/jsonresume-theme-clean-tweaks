@@ -5,4 +5,4 @@ if ! [ -x "$(command -v nodemon)" ]; then
   exit 1
 fi
 
-nodemon -e json,hbs,css,js index.js
+nodemon --exec "node index.js && simplehttpserver -p 8081 public" -e json,hbs,css,js
