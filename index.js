@@ -34,11 +34,11 @@ function build() {
 	}
 
 	fs.writeFileSync(__dirname + "/public/index.html", render(resume));
-	fs.copySync(__dirname + "/data/fonts", "public/fonts");
+	fs.copySync(__dirname + "/data/fonts", __dirname + "/public/fonts");
 
 	if (PDF) {
 		console.log("Exporting PDF resume to: " + __dirname + "/public/Andrew McOlash.pdf");
-		RenderPDF.generateSinglePdf("file://" + __dirname + "/public/index.html", "public/Andrew McOlash.pdf");
+		RenderPDF.generateSinglePdf("file://" + __dirname + "/public/index.html", __dirname + "/public/Andrew McOlash.pdf");
 	}
 }
 
