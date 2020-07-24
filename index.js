@@ -26,19 +26,19 @@ function render(resume) {
 }
 
 function build() {
-	console.log("Exporting HTML resume to: " + process.cwd() + "/public/index.html");
+	console.log("Exporting HTML resume to: " + __dirname + "/public/index.html");
 
 	var resume;
 	if (process.argv.length > 2) {
 		resume = JSON.parse(fs.readFileSync(__dirname + "/" + process.argv[2], "utf8"));
 	}
 
-	fs.writeFileSync(process.cwd() + "/public/index.html", render(resume));
-	fs.copySync("data/fonts", "public/fonts");
+	fs.writeFileSync(__dirname + "/public/index.html", render(resume));
+	fs.copySync(__dirname + "/data/fonts", "public/fonts");
 
 	if (PDF) {
-		console.log("Exporting PDF resume to: " + process.cwd() + "/public/Andrew McOlash.pdf");
-		RenderPDF.generateSinglePdf("file://" + process.cwd() + "/public/index.html", "public/Andrew McOlash.pdf");
+		console.log("Exporting PDF resume to: " + __dirname + "/public/Andrew McOlash.pdf");
+		RenderPDF.generateSinglePdf("file://" + __dirname + "/public/index.html", "public/Andrew McOlash.pdf");
 	}
 }
 
