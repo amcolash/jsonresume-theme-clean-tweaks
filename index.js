@@ -33,6 +33,8 @@ function build() {
 		resume = JSON.parse(fs.readFileSync(__dirname + "/" + process.argv[2], "utf8"));
 	}
 
+	fs.mkdirpSync(__dirname + '/public/fonts');
+
 	fs.writeFileSync(__dirname + "/public/index.html", render(resume));
 	fs.copySync(__dirname + "/data/fonts", __dirname + "/public/fonts");
 
